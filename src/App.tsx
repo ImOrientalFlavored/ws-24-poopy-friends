@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 import { puppyList } from './data.js'
 import { useState } from 'react'
 import './App.css'
@@ -13,6 +15,7 @@ interface puppy{
 }
 
 function App() {
+  // @ts-ignore
   const [puppies, setPuppies] = useState(puppyList)
   const [featPupId, setFeatPupId] = useState(null)
 
